@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5faff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .crm-container {
+      background-color: #c7e9f7;
+      border-radius: 15px;
+      padding: 20px 30px;
+      width: 600px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    .crm-title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #2d3e50;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: bold;
+      color: #2d3e50;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .icon {
+      font-size: 28px;
+    }
+
+    /* Colores de íconos */
+    .orange { color: #ff7a00; }
+    .blue { color: #0066cc; }
+    .yellow { color: #ffbb00; }
+    .teal { color: #1abc9c; }
+  </style>
+  <!-- Iconos con emojis (puedes cambiar por FontAwesome o SVGs si quieres más realismo) -->
+</head>
+<body>
+  <div class="crm-container">
+    <div class="crm-title">CRM</div>
+    <div class="grid">
+      <div class="card"><span class="icon orange">🏭</span> Proveedores</div>
+      <div class="card"><span class="icon blue">🧑‍💼</span> Vendedores</div>
+      <div class="card"><span class="icon blue">📦</span> Productos</div>
+      <div class="card"><span class="icon teal">👩‍💼</span> Clientes</div>
+      <div class="card"><span class="icon yellow">💰</span> Historial de gastos</div>
+      <div class="card"><span class="icon yellow">📊</span> Historial de ventas</div>
+    </div>
+  </div>
+</body>
+</html>
